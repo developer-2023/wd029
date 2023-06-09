@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- img as a link -->
+    <a href="https://www.google.com"><img width="200" src="squirrel.png" alt="squirrel"></a>
+
+    <!-- figure and figcaption -->
+    <figure>
+        <img width="200" src="https://cdn.pixabay.com/photo/2023/05/31/17/54/cat-8031947_1280.jpg" alt="squirrel">
+        <figcaption>Cat</figcaption>
+    </figure>
+
+    <picture>
+        <source media="(min-width: 1100px)" width="200" srcset="https://cdn.pixabay.com/photo/2023/05/16/09/17/andean-bear-7997056_1280.jpg">
+        <source media="(min-width: 700px)" width="200" srcset="https://cdn.pixabay.com/photo/2023/06/01/06/22/british-shorthair-8032816_1280.jpg">
+        <source media="(min-width: 450px)" width="200" srcset="https://cdn.pixabay.com/photo/2023/05/19/13/28/bird-8004544_1280.jpg">
+        <img width="200" src="https://cdn.pixabay.com/photo/2023/05/22/18/17/insect-8011258_1280.jpg" alt="default-image">
+    </picture>
+</body>
+</html>
